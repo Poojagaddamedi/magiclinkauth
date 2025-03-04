@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "SkillShareApp",
+    "slug": "SkillShareApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "myapp", 
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourorg.skillshare",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["myapp"]
+          }
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "myapp",
+              "host": "magic-link"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
